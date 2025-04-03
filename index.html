@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Mirage challenge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MM25 Grand Challenge MIRAGE: Multimodal Interleaved Reasoning and Generation Challenge</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-PYVRSFMDRL');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <!--  <script src="./static/js/index.js"></script>-->
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        th[colspan] {
+            text-align: center;
+        }
+
+        caption {
+            font-family: sans-serif;
+            font-size: 20px;
+            color: #666;
+            text-align: center;
+            margin-top: 10px;
+            /* Add top margin */
+        }
+
+        figcaption {
+            font-family: sans-serif;
+            font-size: 20px;
+            color: #666;
+            text-align: center;
+            margin-top: 10px;
+            /* Add top margin */
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">MM25 Grand Challenge MIRAGE: Multimodal Interleaved Reasoning and Generation Challenge
+                        </h1>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- Data Link. -->
+                                <span class="link-block">
+                                    <a href="https://drive.google.com/drive/folders/1-rh5YnV5C44JyoZ8E0dN2gdX347ta_Wl"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-images"></i>
+                                        </span>
+                                        <span>Data</span>
+                                    </a>
+                                </span>
+                                <!-- Participate Link. -->
+                                <span class="link-block">
+                                    <a href="https://forms.gle/gJdi7PB7vLJL2JSP6"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                        <span>Participate</span>
+                                    </a>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- program -->
+
+<!-- 11.1 09:00 am to 12:00 am. xxxxxxxx timezone(UTC+11)
+
+Location: XXXXXXXXXX
+
+0900-0910: Opening
+
+1200-1230: Open Discussion and Future Directions -->
+<!-- date and location -->
+ <!-- program schedule in table (4 column, time event speaker and institution) -->
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Program</h2>
+                <p>Coming soon</p>
+<!--                 <p>Location: Meeting Room 208, MCEC</p> -->
+<!--                 <table>
+                    <caption>Program Schedule</caption>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Event</th>
+                            <th>Speaker</th>
+                            <th>Institution</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:00 am</td>
+                            <td>Opening</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12:00 am</td>
+                            <td>Open Discussion and Future Directions</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table> -->
+            </div>
+        </div>
+    
+    
+    <section class="hero teaser">
+        <div class="container is-max-desktop" style="max-width: 300%!important;">
+            <div class="hero-body">
+                <figure>
+                    <img src="static/images/demo.svg" width="100%"
+                        alt="Demonstrations and task taxonomy of the proposed MIRAGE challenge for two tracks." />
+                    <figcaption>Demonstrations of MIRAGE Challenge</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+<!-- leader board -->
+<section class="section">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <!-- add logo of fireworks -->
+                <h2 class="title is-3"><i class="fas fa-trophy"></i> Leaderboard-Track A</h2> 
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Team</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+            <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <!-- add logo of fireworks -->
+                <h2 class="title is-3"><i class="fas fa-trophy"></i> Leaderboard-Track B</h2> 
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Team</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Overview</h2>
+                    <div class="content has-text-justified">
+                        <p>The Multimodal Interleaved Reasoning and Generation Challenge aim to facilitate development on interleaved vision language instruction following capability of AI systems by addressing crucial tasks in two sub-tracks: i) Multimodal Interleaved Instruction Reasoning and ii) Multimodal Interleaved Content Generation. These tasks involve multiple images as visual contexts and encourage comprehensive ability for unified multi-modal comprehension and generation with generative multi-modal AI.
+                        </p>
+                        <ul>
+                            <li><strong>Track A, Multimodal Interleaved Instruction Reasoning,</strong> focuses on understanding analysis and inference between multiple images.  Participants should understand the relationship between interleaved image-text sequences and give the corresponding comprehension for predefined open-ended questions or multi-choice options.</li>
+                            <li><strong>Track B, Multimodal Interleaved Content Generation,</strong> emphasizes generating subsequent images followed by sequential interleaved image-text contexts.  Participants should generate desired images based on the given references or contexts, following instruction semantics while maintaining content consistency.</li>
+                        </ul>
+                        <p>
+                            By addressing these tasks, the challenge seeks to promote the mutual enhancement of understanding and generative capabilities of multi-modal AI systems when facing intertwined visual and textual information
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Task Details</h2>
+                    <div class="content has-text-justified">
+                        <p><strong>Track A: Multimodal Interleaved Instruction Reasoning:</strong></p>
+
+                        <ul>
+                            <li><strong>Multi-Image Reasoning.</strong> This category focuses on the comparative analysis between images and texts.</li>
+                            <li><strong>Document and Knowledge-Based Understanding.</strong> This category requires extraction and comprehension of information from structured formats.</li>
+                            <li><strong>Interactive Multi-Modal Communication.</strong> This category focuses on the dynamic interaction between visual and textual modalities in a conversational context.</li>
+                            <li><strong>Multi-Image Discrimination.</strong> This task involves analyzing two given photos to determine their similarities and discrimination across multiple dimensions.</li>
+                        </ul>
+                        <p><strong>Track B: Multimodal Interleaved Content Generation:</strong></p>
+
+                        <ul>
+                            <li><strong>Sequential Visual Generation.</strong> This task category encompasses the subsequent image generation of coherent narratives based on sequential visual inputs.</li>
+                            <li><strong>Material-based Image Coloring.</strong> The task involves coloring a specific object in the target image based on the
+given material image to get the corresponding material.</li>
+                            <li><strong>Visual Reference Customization.</strong> This task requires the model to extract and apply pixel-level control from
+images, such as cartoon characters or clothing sketches</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <table>
+                <caption>MIRAGE Challenge Task Details</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Task</th>
+                        <th>Scenario</th>
+                        <th>Dataset</th>
+                        <th>Metric</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="26" style="writing-mode: vertical-rl; text-align: center;">Track A: Multimodal Interleaved Instruction Reasoning</td>
+                        <th colspan="4">Multi-Image Reasoning</th>
+                    </tr>
+                    <tr>
+                        <td>Visual Change Captioning</td>
+                        <td>Surveillance</td>
+                        <td>Spot-the-Diff</td>
+                        <td>ROUGE-L</td>
+                    </tr>
+                    <tr>
+                        <td>Visual Change Captioning</td>
+                        <td>Synthetic</td>
+                        <td>CLEVR-Change</td>
+                        <td>ROUGE-L</td>
+                    </tr>
+                    <tr>
+                        <td>Visual Relationship Expressing</td>
+                        <td>General</td>
+                        <td>IEdit</td>
+                        <td>ROUGE-L</td>
+                    </tr>
+                    <tr>
+                        <td>Subtle Difference Expressing</td>
+                        <td>Fine-Grained</td>
+                        <td>Birds-to-Words</td>
+                        <td>ROUGE-L</td>
+                    </tr>
+                    <tr>
+                        <td>Image-Set QA</td>
+                        <td>Driving Recording</td>
+                        <td>nuScenes</td>
+                        <td>Accuracy</td>
+                    </tr>
+                    <tr>
+                        <td>Industrial Inspection</td>
+                        <td>Industrial</td>
+                        <td>VISION</td>
+                        <td>Accuracy</td>
+                    </tr>
+                    <tr>
+                        <td>Fashion QA</td>
+                        <td>Fashion</td>
+                        <td>Fashion200K</td>
+                        <td>Accuracy</td>
+                    </tr>
+                    <tr>
+                        <td>Property Coherence</td>
+                        <td>General</td>
+                        <td>MIT-States-PropertyCoherence</td>
+                        <td>Accuracy</td>
+                    </tr>
+                    <tr>
+                        <td>State Transformation Coherence</td>
+                        <td>General</td>
+                        <td>MIT-States-StateCoherence</td>
+                        <td>Accuracy</td>
+                    </tr>
+                    <tr>
+                        <td>Visual Step Matching</td>
+                        <td>Recipe</td>
+                        <td>RecipeQA-ImageCoherence</td>
+                        <td>Accuracy</td>
+                    </tr>
+                    <tr>
+                        <td>Multi-Image Visual Entailment</td>
+                        <td>General</td>
+                        <td>NLVR2</td>
+                        <td>Accuracy</td>
+                    </tr>
+                    <tr>
+                        <td>Ambiguity Analysis</td>
+                        <td>Mobile Photo</td>
+                        <td>VizWiz</td>
+                        <td>Accuracy</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">Document and Knowledge-Based Understanding</th>
+                    </tr>
+                    <tr>
+                        <td>Slide QA</td>
+                        <td>Slide</td>
+                        <td>SlideVQA</td>
+                        <td>Accuracy</td>
+                    </tr>
+                    <tr>
+                        <td>OCR QA</td>
+                        <td>Book Cover</td>
+                        <td>OCR-VQA</td>
+                        <td>Accuracy</td>
+                    </tr>
+                    <tr>
+                        <td>Document QA</td>
+                        <td>Document Image</td>
+                        <td>DocVQA</td>
+                        <td>Accuracy</td>
+                    </tr>
+                    <tr>
+                        <td>Webpage QA</td>
+                        <td>Webpage</td>
+                        <td>WebQA</td>
+                        <td>Accuracy</td>
+                    </tr>
+                    <tr>
+                        <td>Textbook QA</td>
+                        <td>Textbook</td>
+                        <td>TQA</td>
+                        <td>Accuracy</td>
+                    </tr>
+                    <tr>
+                        <td>Complex Multimodal QA</td>
+                        <td>Wikipedia</td>
+                        <td>MMQA</td>
+                        <td>Accuracy</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">Interactive Multi-Modal Communication</th>
+                    </tr>
+                    <tr>
+                        <td>Conversational Embodied Dialogue</td>
+                        <td>Embodied</td>
+                        <td>ALFRED</td>
+                        <td>ROUGE-L</td>
+                    </tr>
+                    <tr>
+                        <td>Multi-Modal Dialogue</td>
+                        <td>Conversation</td>
+                        <td>MMCoQA</td>
+                        <td>ROUGE-L</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">Multi-Image Discrimination</th>
+                    </tr>
+                    <tr>
+                        <td>Facial Comparison</td>
+                        <td>General</td>
+                        <td>LFW</td>
+                        <td>Accuracy</td>
+                    </tr>
+                    <tr>
+                        <td>Similarity Dimension Selection</td>
+                        <td>General</td>
+                        <td>Totally-Looks-Like</td>
+                        <td>Accuracy</td>
+                    </tr>
+                     <tr>
+                        <td rowspan="17" style="writing-mode: vertical-rl; text-align: center;">Track B: Multimodal Interleaved Content Generation</td>
+                        <th colspan="4">Sequential Visual Generation</th>
+                    </tr>
+                    <tr>
+                        <td>Animated Story Completion</td>
+                        <td>Cartoon</td>
+                        <td>AESOP</td>
+                        <td>ROUGE-L & Similarity</td>
+                    </tr>
+                    <tr>
+                        <td>Animated Story Completion</td>
+                        <td>Cartoon</td>
+                        <td>PororoSV</td>
+                        <td>ROUGE-L & Similarity</td>
+                    </tr>
+                    <tr>
+                        <td>Animated Story Completion</td>
+                        <td>Cartoon</td>
+                        <td>FlintstonesSV</td>
+                        <td>ROUGE-L & Similarity</td>
+                    </tr>
+                    <tr>
+                        <td>Sequential Photo Storytelling</td>
+                        <td>Album</td>
+                        <td>VIST</td>
+                        <td>ROUGE-L & Similarity</td>
+                    </tr>
+                    <tr>
+                        <td>Sequential Photo Storytelling</td>
+                        <td>Cartoon</td>
+                        <td>DiDeMoSV</td>
+                        <td>ROUGE-L & Similarity</td>
+                    </tr>
+                    <tr>
+                        <td>Comic Dialogue Identification</td>
+                        <td>Cartoon</td>
+                        <td>COMICS-Dialogue</td>
+                        <td>ROUGE-L & Similarity</td>
+                    </tr>
+                    <tr>
+                        <td>Comic Panel Identification</td>
+                        <td>Cartoon</td>
+                        <td>COMICS-Panel</td>
+                        <td>ROUGE-L & Similarity</td>
+                    </tr>
+                    <tr>
+                        <td>Recipe Completion</td>
+                        <td>Recipe</td>
+                        <td>RecipeQA-TextCloze</td>
+                        <td>ROUGE-L & Similarity</td>
+                    </tr>
+                    <tr>
+                        <td>Visual Step Cloze</td>
+                        <td>Recipe</td>
+                        <td>RecipeQA-VisualCloze</td>
+                        <td>ROUGE-L & Similarity</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">Material-based Image Coloring</th>
+                    </tr>
+                    <tr>
+                        <td>Material Transfer</td>
+                        <td>Industrial</td>
+                        <td>FMD</td>
+                        <td>Similarity</td>
+                    </tr>
+                    <tr>
+                        <td>Texture Transfer</td>
+                        <td>Physical</td>
+                        <td>KTH-TIPS2</td>
+                        <td>Similarity</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">Visual Reference Customization</th>
+                    </tr>
+                    <tr>
+                        <td>Virtual Try-on</td>
+                        <td>Fashion</td>
+                        <td>VTON-HD</td>
+                        <td>Similarity</td>
+                    </tr>
+                    <tr>
+                        <td>Visual Reference</td>
+                        <td>General</td>
+                        <td>MSCOCO</td>
+                        <td>Similarity</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Dataset-Track A</h2>
+                    <div class="content has-text-justified">
+                        <p>For each task, we will provide a dataset with a training set and a test set. The annotations
+                            are in the form of a JSON file. An example of the task metadata is shown below.</p>
+                    </div>
+                </div>
+            </div>
+            <pre><code class="language-json">"metadata": {
+        "dataset": "Totally-Looks-Like",
+        "split": "test",
+        "num_sample": "50",
+        "task_instruction": [
+            "You are provided with a dataset comprising two images and text; accurately distinguish two images in multiple dimensions and accurately answer the following question. You must only answer with 'yes' or 'no'.",
+            "Analyze the given data containing two images and text, please distinguish two images in multiple dimensions and answer the subsequent question accurately. You must only answer with 'yes' or 'no'.",
+            "Based on the data provided, distinguish two images in multiple dimensions, and give a precise answer to the question. You must only answer with 'yes' or 'no'.",
+            "Given a dataset consisting of two images and text, distinguish two images in multiple dimensions and respond to questions correctly. You must only answer with 'yes' or 'no'.",
+            "Your objective is to distinguish two images in multiple dimensions, please answer the question accurately. You must only answer with 'yes' or 'no'.",
+            "Working with a dataset that has two images and text, provides an accurate answer to the question. You must only answer with 'yes' or 'no'.",
+            "Reviewing the provided data, distinguish two images in multiple dimensions and answer the question precisely. You must only answer with 'yes' or 'no'.",
+            "Based on the dataset featuring two images and accompanying text, distinguish two images in multiple dimensions and determine the correct answer. You must only answer with 'yes' or 'no'.",
+            "Assess the two images and text in the dataset, then distinguish two images in multiple dimensions and answer the subsequent question. You must only answer with 'yes' or 'no'.",
+            "Interpret the given dataset to distinguish two images in multiple dimensions and formulate an accurate response. You must only answer with 'yes' or 'no'."
+        ],
+        "question_type": "yes-no"
+    }</code></pre>
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="content has-text-justified">
+                        <p>A example of the instance annoation is shown below.</p>
+                    </div>
+                </div>
+            </div>
+            <pre><code class="language-json">"annotations": [
+        {
+            "sample_id": "0",
+            "meta_instruction_id": "1",
+            "instance": {
+                "context": "Image_1: {image#1} Image_2: {image#2} Question: Compare the two images in terms of facial features, global shape, near-duplicates, facial resemblance, textural patterns, and color composition. Return 'yes' if they exhibit similarities in any of these aspects, otherwise return 'no'.",
+                "images_path": [
+                    "images/01905_0.jpg",
+                    "images/01905_1.jpg"
+                ]
+            },
+            "response": ""
+        },
+        ...
+    ]</code></pre>
+    <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+            <h2 class="title is-3">Dataset-Track B</h2>
+            <div class="content has-text-justified">
+                <p>For each task, we will provide a dataset with a training set and a test set. The annotations
+                    are in the form of a JSON file. An example of the task metadata is shown below.</p>
+            </div>
+        </div>
+    </div>
+    <pre><code class="language-json">"metadata": {
+        "dataset": "KTH-TIPS2",
+        "split": "test",
+        "num_sample": "500",
+        "task_instruction": [
+            "Using the provided dataset containing images, text, and texture, your objective is to precisely apply the texture to the designated object in the image as outlined in the question. You must generate the corresponding image instead of text.",
+            "Given a set of relevant data comprising images, text, and texture, your task is to accurately transfer the texture to the specified object in the image as described in the question. You must generate the corresponding image instead of text.",
+            "With the supplied collection of images, text, and texture, your goal is to meticulously apply the texture to the indicated object in the image as per the question's instructions. You must generate the corresponding image instead of text.",
+            "Based on the provided data, which includes images, text, and texture, your responsibility is to precisely map the texture onto the specified object in the image as detailed in the question. You must generate the corresponding image instead of text.",
+            "Using the available dataset of images, text, and texture, your task is to carefully transfer the texture to the designated object in the image exactly as instructed in the question. You must generate the corresponding image instead of text.",
+            "Given the relevant data, including images, text, and texture, your objective is to accurately apply the texture to the specified object in the image as described in the question. You must generate the corresponding image instead of text.",
+            "With the provided images, text, and texture, your task is to precisely overlay the texture onto the designated object in the image as outlined in the question. You must generate the corresponding image instead of text.",
+            "Using the collection of images, text, and texture provided, your goal is to meticulously transfer the texture to the specified object in the image as per the question's instructions. You must generate the corresponding image instead of text.",
+            "Given the dataset containing images, text, and texture, your responsibility is to accurately map the texture onto the designated object in the image as detailed in the question. You must generate the corresponding image instead of text.",
+            "With the supplied data, which includes images, text, and texture, your task is to carefully apply the texture to the specified object in the image exactly as instructed in the question. You must generate the corresponding image instead of text."
+        ],
+        "question_type": "image-generation"
+    }</code></pre>
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="content has-text-justified">
+                        <p>A example of the instance annoation is shown below.</p>
+                    </div>
+                </div>
+            </div>
+            <pre><code class="language-json">"annotations": [
+        {
+            "sample_id": "0",
+            "meta_instruction_id": "4",
+            "instance": {
+                "context": "Question: What does it look like to replace the cat's texture in the image {image#1} with the texture {image#2} given",
+                "images_path": [
+                    "images/0.jpg",
+                    "images/1.jpg"
+                ]
+            },
+            "response": ""
+        },
+        {
+            "sample_id": "1",
+            "meta_instruction_id": "2",
+            "instance": {
+                "context": "Question: What does it look like to replace the horse's texture in the image {image#1} with the texture {image#2} given",
+                "images_path": [
+                    "images/2.jpg",
+                    "images/3.jpg"
+                ]
+            },
+            "response": ""
+        },
+        ...
+    ]</code></pre>
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="content has-text-justified">
+                        <p>The dataset can be downloaded from <a
+                                href="https://drive.google.com/drive/folders/1-rh5YnV5C44JyoZ8E0dN2gdX347ta_Wl">google
+                                drive</a>.
+                    </div>
+                </div>
+            </div>
+
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/
+              
+            <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
+
+            <table>
+                <caption>MIRAGE Dataset Statistics</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Tasks</th>
+                        <th>Scenarios</th>
+                        <th>Images</th>
+                        <th>Instructions</th>
+                        <th>Avg. Images / Instruction</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="2" style="text-align: center; word-wrap: break-word; white-space: normal;">Track A: Multimodal Interleaved Instruction Reasoning</th>
+                        <td>MIRAGE-Test</td>
+                        <td>22</td>
+                        <td>17</td>
+                        <td>52.4K</td>
+                        <td>15.0K</td>
+                        <td>3.5</td>
+                    </tr>
+                    <tr>
+                        <td>MIRAGE-Train</td>
+                        <td>22</td>
+                        <td>17</td>
+                        <td>485.1K</td>
+                        <td>127.7K</td>
+                        <td>3.8</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2" style="text-align: center; word-wrap: break-word; white-space: normal;">Track B: Multimodal Interleaved Content Generation</th>
+                        <td>MIRAGE-Test</td>
+                        <td>13</td>
+                        <td>7</td>
+                        <td>25.7K</td>
+                        <td>8.9K</td>
+                        <td>2.9</td>
+                    </tr>
+                    <tr>
+                        <td>MIRAGE-Train</td>
+                        <td>13</td>
+                        <td>7</td>
+                        <td>231.6K</td>
+                        <td>68.1K</td>
+                        <td>3.4</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Evaluation</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            (I) For track A <b>Multimodal Interleaved Instruction Reasoning</b>, the evaluation will use <i>ROUGE-L (F1)</i> to assess the semantic and structural alignment of the generated text with reference texts of open-ended comprehension tasks and adopt <i>Accuracy</i> to measure the correctness of selected options of multi-choice comprehension tasks. 
+                        </p>
+                        <p>
+                            (II) For track B <b>Multimodal Interleaved Content Generation</b>, <i>ROUGE-L</i> & <i>Similarity</i> will serve as the evaluation metric. We use semantic similarity to evaluate the instruction following of the generated image and visual similarity to evaluate the content consistency of the generated image
+                        </p>
+                        <p>
+                            The overall score for each team will be defined as the mean of these scores across all
+                            tasks for each track, reflecting a comprehensive measure of performance akin to the scoring of human
+                            examinations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Submission</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            To participate in the MIRAGE challenge, please first register by submitting the <a
+                                href="https://forms.gle/gJdi7PB7vLJL2JSP6">form</a>.
+                        </p>
+                        <p>
+                            Participants can send the submission files to <a
+                                href="mailto:mm25_mirage@outlook.com.com">mm25_mirage@outlook.com</a> with the subject "MIRAGE
+                            Challenge Submission-Track A/B". We will evaluate the submissions and announce the results on the
+                            website later.
+                        </p>
+                        <p>
+                            The submission file should keep the same structure as the MIRAGE-Test dataset, with the
+                            response field filled with the predicted answer. Image folders are <b>not</b> required for
+                            submission.
+                        </p>
+                        <p>
+                            [<b>Important</b>] Challenge overview papers:
+                            You may submit a 6-page paper (same template as the main paper track) summarizing the data, results and the main take away from the challenge. This will go to the ICMEW (workshop) proceedings together with the challenge papers. Participants can send the challenge overview paper to mm25_mirage@outlook.com with the subject "MIRAGE Challenge Paper Submission-Track A/B"
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Important Dates</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            <b>Registration Open:</b> 2025-4-15
+                        </p>
+                        <p>
+                            <b>Training Data Release:</b> 2025-4-10
+                        </p>
+                        <p>
+                            <b>Challenge Result Submission Deadline:</b> 2025-6-20
+                        </p>
+                        <p>
+                            <b>Challenge Technical Paper Submission Deadline:</b> 2025-7-10
+                        </p>
+                        <p>
+                            <b>Camera Ready Submission Deadline:</b> 2025-7-20
+                        </p>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Organizers</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Dong Chen, Zhengzhou University, China
+                        </p>
+                        <p>
+                            Fei Gao, Zhengzhou University, China
+                        </p>
+                        <p>
+                            Zhengqing Hu, Zhengzhou University, China
+                        </p>
+                        <p>
+                            Xiaojun Chang, University of Science and Technology of China, China
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Contact</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            For any questions, please contact us at <a href="mailto:mm25_mirage@outlook.com.com">mm25_mirage@outlook.com</a>. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            The template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">source code</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
